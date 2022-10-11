@@ -1,0 +1,113 @@
+
+= SAÉ 01-05
+
+Editée le 29/03/2022
+
+_Groupe 4A02 :_
+
+
+MAJ le 08/05/2022:
+
+=== Tâches à faire 
+
+==== GPO :
+
+- [ ] Créer la documentation technique de la V0
+- [ ] Rédiger la documentation technique et la documentation utilisateur V1
+- [ ] Rédiger le cahier de test V2
+
+==== DEV :
+
+- [ ] Générer un relevé mensuel d'un compte en PDF
+- [ ] Effectuer un débit exceptionnel 
+
+*Lien vers le CDCU final :* https://github.com/IUT-Blagnac/sae2022-bank-4a2/blob/main/V3/CDCU%20V3.adoc[__Cliquer ici__] +
+*Lien vers la documentation utilisateur :* https://github.com/IUT-Blagnac/sae2022-bank-4a2/blob/main/V2/Documentation%20Utilisateur%20V2.adoc[__Cliquer ici__] +
+*Lien vers la documentation technique :* https://github.com/IUT-Blagnac/sae2022-bank-4a2/blob/main/V2/Documentation%20Technique%20V2.adoc[__Cliquer ici__] +
+*Lien vers le cahier de tests :* https://github.com/IUT-Blagnac/sae2022-bank-4a2/blob/main/V2/Cahier%20de%20tests%20V2.adoc[__Cliquer ici__]
+
+|===
+|MEMBRES :
+|_Louis Yvelin_
+|_Victor Thompson_
+|_Mickael Fernandez_
+|_Nicolas Sacilotto_
+|===
+
+=== Répartition des tâches 
+
+|===
+|Version |Utilisateur      |Use Case                 |Cas particulier       |Réussites    |Victor THOMPSON |Louis YVELIN |Nicolas SACILOTTO |Mickaël FERNANDEZ
+|1       |Chef d'Agence    |CRUD employé             |C                     |100%             | |✓| |
+|1       |Chef d'Agence    |CRUD employé             |R                     |100%             | |✓| |
+|1       |Chef d'Agence    |CRUD employé             |U                     |100%             | |✓| |
+|1    	 |Chef d'Agence    |CRUD employé             |D                     |100%             | |✓| |
+|1       |Chef d'Agence    |Rendre inactif un client |être chef d'agence    |100%         | | |✓|
+|1    	 |Guichetier       |Compte                   |Créer                 |100%         | | |✓|
+|1    	 |Guichetier       |Compte                   |Créditer/Débiter      |             |✓| | |
+|1    	 |Guichetier       |Compte                   |Effectuer un virement |100%             | | | |✓
+|1    	 |Guichetier       |Compte                   |Clôturer              |             | | |✓|
+|2    	 |Chef d'Agence    |Compte                   |Débit exceptionnel    |100%             | |✓| |
+|2    	 |Chef d'Agence    |Emprunt                  |Simuler emprunt       |60%             | | | |✓
+|2    	 |Chef d'Agence    |Emprunt                  |Simuler assurance     |60%             | | | |✓
+|2    	 |Guichetier       |Compte                   |Relevé PDF            |100%             |✓| | |
+|2    	 |Guichetier       |CRUD Prélèvement         |C                     |100%         | | |✓|
+|2     	 |Guichetier       |CRUD Prélèvement         |R                     |100%         | | |✓|
+|2    	 |Guichetier       |CRUD Prélèvement         |U                     |100%        | | |✓|
+|2    	 |Guichetier       |CRUD Prélèvement         |D                     |80% *        | | |✓|
+|3    	 |Batch            |Prélèvement automatiques |                      |             | | | |
+|3    	 |Batch            |Relevé mensuels          |                      |             | | | |
+|===
+
+*Manque de temps pour supprimer mais il fallait juste ajouter une méthode dans le modèle pour supprimer de la BD le prélèvement selectionné.
+
+=== Prise en compte des commentaires
+
+- Ajustement du sommaire numéroté
+- Fautes de frappes
+- Infos essentielles (équipe, date, nom projet, clients)
+- Dates de livraison
+- Doc. technique
+
+=== Commentaires
+
+Livraison CDCU V3 : +
+0,5/2	manque équipe, date, nom projet et client. Sommaire non numéroté +
+2/2	QQ fautes de frappes +
+2/4	Copier coller du sujet. Il faut contextualiser davantage ! +
+3/4	Il manque surtout qq infos techniques sur l'appli. +
+3,5/4	Attentions aux UC coupés !! Faire un UC par domaine couvert :  gestion des comptes, des clients, des crédits par ex. +
+3/4	Il manque les lg et outils imposés ainsi que les règles organisationnelles : date de livraison par ex, +
+	
+Total : 14/20	
+
+== doc technique retour = Documentations technique
+
+voir fichier ascidoc retour 
+
+ * lien vers https://github.com/IUT-Blagnac/sae2022-bank-4a2/blob/main/V1/retourDocTechnique.adoc
+ 
+ * lien vers https://github.com/IUT-Blagnac/sae2022-bank-4a2/blob/main/V1/Documentation%20Utilisateur%20V1.adoc
+ 
+ 
+== cahier de recette
+ 
+ La partie générale est très bien mais il faut revoir les fiches de tests elle m^me.
+ 
+ Hiérarchiser les fiches de test par exemple
+=== CRUD des employés
+ un test employé existant création impossible
+ un test employé nouveau ok on se déconnecte on se connecte avec lui il a le bon rôle
+ ...
+=== Compte
+ Un test créditer -> nouveau solde ok
+ un test débiter débit impossible
+ ...
+ Il faut plus détailler.
+ 
+ 
+=== javadoc
+pas vue
+
+=== jar
+pas vu
