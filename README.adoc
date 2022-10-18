@@ -3,6 +3,9 @@
 
 Editée le 29/03/2022
 
+Création d'une application de simulation d'emprunt bancaire. (Java, JavaFX, FXML, SQL Oracle, Git, Github)
+
+
 _Groupe 4A02 :_
 
 
